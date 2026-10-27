@@ -1,0 +1,17 @@
+flowchart TD
+    A["Raw CSV Sources"] --> B["Staging Layer"]
+    B --> C["Data Quality Checks"]
+    C --> D["Exact Deduplication"]
+    D --> E["Cleaned Datasets"]
+    E --> F["Golden Dataset Validation"]
+    F --> G["Feature Layer"]
+    G --> H["Metrics Layer"]
+    H --> I["Executive Dashboard"]
+    H --> J["Monthly Recovery Analysis"]
+
+    C --> K["Data Quality Report"]
+    K --> L["Rejected or Flagged Records"]
+    L --> F
+
+    M["Data Dictionary"] --> C
+    N["Business Rules"] --> F

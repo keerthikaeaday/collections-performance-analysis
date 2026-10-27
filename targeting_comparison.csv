@@ -1,0 +1,9 @@
+period,recommended_channel,targets,contacted,expired,skipped,average_priority,contact_rate
+Before July,FIELD,9413,2340,2460,2306,5.52,24.86
+Before July,SMS,9291,2321,2272,2346,5.54,24.98
+Before July,VOICE,9239,2306,2414,2253,5.48,24.96
+Before July,WHATSAPP,9226,2309,2283,2346,5.49,25.03
+July onward,FIELD,1952,502,473,497,5.6,25.72
+July onward,SMS,1930,501,472,461,5.54,25.96
+July onward,VOICE,1963,474,497,472,5.45,24.15
+July onward,WHATSAPP,1986,501,500,492,5.4,25.23

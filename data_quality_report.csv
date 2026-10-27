@@ -1,0 +1,6 @@
+dataset,issue,count,impact
+payments,Exact duplicate rows,486,Potential overstatement of successful transactions and payment amounts
+payments,Missing payment references after payment_id deduplication,368,Transaction traceability is reduced
+payments,Payment records with unmatched borrower IDs,2043,Borrower attribution requires investigation
+accounts,Missing borrower IDs,455,Account-to-borrower linkage is incomplete
+accounts,Records with unmatched borrower IDs,2458,Account-to-borrower relationships require reconciliation

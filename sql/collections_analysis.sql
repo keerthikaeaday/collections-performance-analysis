@@ -1,13 +1,13 @@
 SELECT
-   DATE_TRUNC('month', CAST(event_at AS TIMESTAMP)) AS month,
-   COUNT(*) AS total_transactions,
-   SUM(CASE WHEN payment_status = 'SUCCESS' THEN 1 ELSE 0 END) AS successful_transactions,
-   SUM(CASE WHEN payment_status = 'SUCCESS' THEN amount ELSE 0 END) AS recovered_amount,
-   ROUND(
-       100.0 * SUM(CASE WHEN payment_status = 'SUCCESS' THEN 1 ELSE 0 END)
-       / NULLIF(COUNT(*), 0),
-       2
-   ) AS payment_success_rate_pct
+    DATE_TRUNC('month', CAST(event_at AS TIMESTAMP)) AS month,
+    COUNT(*) AS total_transactions,
+    SUM(CASE WHEN payment_status = 'SUCCESS' THEN 1 ELSE 0 END) AS successful_transactions,
+    SUM(CASE WHEN payment_status = 'SUCCESS' THEN amount ELSE 0 END) AS successful_payment_amount,
+    ROUND(
+        100.0 * SUM(CASE WHEN payment_status = 'SUCCESS' THEN 1 ELSE 0 END)
+        / NULLIF(COUNT(*), 0),
+        2
+    ) AS payment_success_rate_pct
 FROM payments
 GROUP BY DATE_TRUNC('month', CAST(event_at AS TIMESTAMP))
 ORDER BY month;

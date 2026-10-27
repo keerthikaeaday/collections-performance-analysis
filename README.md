@@ -12,7 +12,7 @@ This project investigates collections payment performance, data quality, payment
 ## Contents
 - golden_dataset/: Cleaned datasets and the pipeline script.
 - sql/collections_analysis.sql: SQL queries for payment performance and data-quality checks.
-- reports/executive_memo.docx: Executive summary and recommendations.
+- executive_memo.md: Executive summary and recommendations.
 - executive_dashboard.html: Dashboard summarising monthly performance and targeting.
 - dashboard_charts.png: Dashboard visualisations.
 - data_architecture.mmd: Proposed analytics architecture.

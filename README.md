@@ -1,5 +1,11 @@
 # Collections Data Analyst Assignment
 
+# Live Dashboard
+
+[Click here to explore the Collections Performance Dashboard](https://keerthikaeaday.github.io/collections-performance-analysis/)
+
+Explore monthly payment performance, success rates, and targeting analysis through the interactive dashboard.
+
 ## Project Overview
 This project investigates collections payment performance, data quality, payment attribution, and targeting changes.
 
